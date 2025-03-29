@@ -3,56 +3,66 @@ import Container from "../shared/Container.astro";
 import Paragraph from "../shared/Paragraph.astro";
 import Title from "../shared/Title.astro";
 import Info from "../cards/Info.astro";
-
 ---
 
-<section id="services">
+<section id="services" class="py-20">
     <div class="text-center max-w-3xl mx-auto space-y-4">
-        <Title>
-            Nuestros servicios
-        </Title>
+        <Title> Nuestros servicios </Title>
     </div>
-    <Container className="flex flex-col midmd:flex-row gap-10 lg:gap-12 space-y-10">
-        <div class="flex-1 flex items-center justify-center">
-            <div class="relative w-full max-w-md h-80 sm:h-96 midmd:h-full">
-                <div class="absolute rotate-45 -left-5 md:-left-10 lg:-left-20 xl:-left-24 p-1 top-1/2 w-16 h-16 bg-gradient-to-br from-primary to-orange-400 blur-3xl opacity-50"></div>
-                <div class="absolute p-1 -top-4 md:-top-10 right-0 w-20 h-20 bg-gradient-to-br from-primary to-orange-400 rounded-full blur-3xl opacity-60"></div>
-                <span class="absolute w-full aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-tr from-primary to-green-400 opacity-40 blur-2xl left-0 bottom-0"></span>
-                <img src="/images/dev-with-c-1.webp" alt="banner image" width="1240" height="1385" class="absolute bottom-0 left-1/2 -translate-x-1/2 max-h-full w-auto" />
+
+    <!-- Desarrollo IA -->
+    <Container className="flex flex-col midmd:flex-row items-center gap-10 lg:gap-12">
+        <div class="flex-1 flex justify-center">
+            <div class="relative w-80 h-80 sm:w-96 sm:h-96">
+                <img src="/images/desarrollo.jpg" alt="Desarrollo IA" 
+                     class="rounded-full object-cover w-full h-full"/>
             </div>
         </div>
-        <div class="flex-1 flex flex-col justify-center">
+        <div class="flex-1 flex flex-col justify-center text-center midmd:text-left">
             <Title>Desarrollo IA</Title>
             <Paragraph className="mt-8">
-                Brindamos servicios de calidad para entregar soluciones de inteligencia artificial efectivas para solucionar todos los desafíos propuestos por nuestro cliente. El desarrollo de soluciones puede ir en secuencia con nuestro servicio de consultoría o si el cliente ya tiene una idea en mente, nosotros brindamos el potencial tecnológico para hacerla realidad
+                Brindamos servicios de calidad para entregar soluciones de inteligencia artificial efectivas 
+                para solucionar todos los desafíos propuestos por nuestro cliente. El desarrollo de soluciones 
+                puede ir en secuencia con nuestro servicio de consultoría o si el cliente ya tiene una idea en mente, 
+                nosotros brindamos el potencial tecnológico para hacerla realidad.
             </Paragraph>
         </div>
     </Container>
-    
-    <Container className="flex flex-col midmd:flex-row-reverse gap-10 lg:gap-12">
-        <div class="flex-1 flex items-center justify-center">
-            <div class="relative w-full max-w-md h-80 sm:h-96 midmd:h-full">
-                <img src="/images/dev-with-c.webp" alt="banner image" width="1240" height="1385" class="absolute bottom-0 left-1/2 -translate-x-1/2 max-h-full w-auto"/>
+
+    <!-- Consultoría -->
+    <Container className="flex flex-col midmd:flex-row-reverse items-center gap-10 lg:gap-12">
+        <div class="flex-1 flex justify-center">
+            <div class="relative w-80 h-80 sm:w-96 sm:h-96">
+                <img src="/images/consultoria.jpg" alt="Consultoría" 
+                     class="rounded-full object-cover w-full h-full"/>
             </div>
         </div>
-        <div class="flex-1 flex flex-col justify-center">
+        <div class="flex-1 flex flex-col justify-center text-center midmd:text-left">
             <Title>Consultoría</Title>
             <Paragraph className="mt-8">
-                Ayudamos a las diferentes empresas a llevar a cabo sus sueños relacionados a la tecnología. Nos reunimos con diferentes miembros del equipo, realizamos un levantamiento de información para analizar detalladamente cada área en la que podemos implementar una mejora y realizamos una propuesta comercial adecuada para cada uno de nuestros clientes
+                Ayudamos a las diferentes empresas a llevar a cabo sus sueños relacionados a la tecnología. 
+                Nos reunimos con diferentes miembros del equipo, realizamos un levantamiento de información para 
+                analizar detalladamente cada área en la que podemos implementar una mejora y realizamos una propuesta 
+                comercial adecuada para cada uno de nuestros clientes.
             </Paragraph>
         </div>
     </Container>
-    
-    <Container className="flex flex-col midmd:flex-row gap-10 lg:gap-12">
-        <div class="flex-1 flex items-center justify-center">
-            <div class="relative w-full max-w-md h-80 sm:h-96 midmd:h-full">
-                <img src="/images/dev-with-c-1.webp" alt="banner image" width="1240" height="1385" class="absolute bottom-0 left-1/2 -translate-x-1/2 max-h-full w-auto" />
+
+    <!-- Mentoría -->
+    <Container className="flex flex-col midmd:flex-row items-center gap-10 lg:gap-12">
+        <div class="flex-1 flex justify-center">
+            <div class="relative w-80 h-80 sm:w-96 sm:h-96">
+                <img src="/images/mentoria.jpg" alt="Mentoría" 
+                     class="rounded-full object-cover w-full h-full"/>
             </div>
         </div>
-        <div class="flex-1 flex flex-col justify-center">
+        <div class="flex-1 flex flex-col justify-center text-center midmd:text-left">
             <Title>Mentoría</Title>
             <Paragraph className="mt-8">
-                La ciencia de datos y la inteligencia artificial son conceptos que han ayudado a miles de empresas y personas a optimizar procesos y aumentar su efectividad. Por lo mismo queremos contribuir a esta nueva ola innovadora capacitando a la mayor cantidad de profesionales para que puedan mejorar su día a día laboral a través de diferentes técnicas desde limpieza de datos hasta el desarrollo de modelos.
+                La ciencia de datos y la inteligencia artificial son conceptos que han ayudado a miles de empresas y 
+                personas a optimizar procesos y aumentar su efectividad. Por lo mismo queremos contribuir a esta nueva ola 
+                innovadora capacitando a la mayor cantidad de profesionales para que puedan mejorar su día a día laboral 
+                a través de diferentes técnicas desde limpieza de datos hasta el desarrollo de modelos.
             </Paragraph>
         </div>
     </Container>
