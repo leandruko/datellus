@@ -1,57 +1,79 @@
 ---
-import Button from "../shared/Button.astro";
 import Container from "../shared/Container.astro";
 import Paragraph from "../shared/Paragraph.astro";
 ---
 
-<section  id="datellusLearn" class="pb-20">
+<section id="datellusLearn" class="pb-20">
   <Container>
     <div
       class="w-full relative py-8 md:py-10 px-6 md:px-8 rounded-2xl bg-gradient-to-tr from-gray-100 to-gray-200 dark:from-gray-900"
     >
       <div class="absolute right-0 top-0 h-full w-full flex justify-end">
         <div class="w-28 h-28 overflow-auto flex rounded-xl relative blur-2xl">
-            <span
-              class="absolute w-16 h-16 -top-1 -right-1 bg-green-500 rounded-md rotate-45"
-            ></span>
-            <span
-              class="absolute w-16 h-16 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"
-            ></span>
-            <span
-              class="absolute w-16 h-16 -bottom-1 -left-1 bg-primary rounded-md rotate-45"
-            ></span>
-          </div>
+          <span
+            class="absolute w-16 h-16 -top-1 -right-1 bg-green-500 rounded-md rotate-45"
+          ></span>
+          <span
+            class="absolute w-16 h-16 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"
+          ></span>
+          <span
+            class="absolute w-16 h-16 -bottom-1 -left-1 bg-primary rounded-md rotate-45"
+          ></span>
+        </div>
       </div>
 
       <div class="absolute left-0 bottom-0 h-full w-full flex items-end">
         <div class="w-28 h-28 overflow-auto flex rounded-xl relative blur-2xl">
-            <span
-              class="absolute w-16 h-16 -top-1 -right-1 bg-green-500 rounded-md rotate-45"
-            ></span>
-            <span
-              class="absolute w-16 h-16 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"
-            ></span>
-            <span
-              class="absolute w-16 h-16 -bottom-1 -left-1 bg-primary rounded-md rotate-45"
-            ></span>
-          </div>
+          <span
+            class="absolute w-16 h-16 -top-1 -right-1 bg-green-500 rounded-md rotate-45"
+          ></span>
+          <span
+            class="absolute w-16 h-16 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"
+          ></span>
+          <span
+            class="absolute w-16 h-16 -bottom-1 -left-1 bg-primary rounded-md rotate-45"
+          ></span>
+        </div>
       </div>
-      <div class="mx-auto text-center max-w-xl md:max-w-2xl relative">
+      <div class="mx-auto max-w-xl md:max-w-2xl relative">
         <h1
           class="text-3xl/tight sm:text-4xl/tight md:text-5xl/tight
           font-bold text-heading-1"
         >
-          Quick Start your <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">Strategic Digital</span> Marketing Campaing
+          Empieza tu camino en <span
+            class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600"
+            >IA y Ciencia de datos</span
+          > con <span
+            class="text-transparent bg-clip-text bg-gradient-to-br from-red-700 from-40% to-stone-50"
+            >Datellus Learning</span
+          >
         </h1>
-        <Paragraph className={"pt-10"}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-          delectus architecto ullam earum
+        <Paragraph className={"pt-8"}>
+          Datellus es un espacio dedicado a la Inteligencia Artificial y la
+          Ciencia de Datos. A través de nuestro canal de YouTube, ofrecemos
+          contenido gratuito diseñado para ayudar a cualquier persona a aprender
+          desde los conceptos básicos hasta técnicas avanzadas en IA y Machine
+          Learning.
         </Paragraph>
-        <div class="mx-auto max-w-md sm:max-w-xl pt-10">
-          <Button variant={"primary"}>
-            <span class="text-white relative z-[5]">Get In Touch</span>
-          </Button>
-        </div>
+        <Paragraph className={"pt-8"}>
+          Nuestro contenido está diseñado para ser accesible, práctico y
+          actualizado, permitiendo a estudiantes, profesionales y entusiastas de
+          la tecnología mejorar sus habilidades en un campo en constante
+          evolución. Explora nuestros videos y mantente al día con las últimas
+          tendencias en Inteligencia Artificial y Ciencia de Datos.
+        </Paragraph>
+
+        <a
+          href="https://www.youtube.com/@datellus"
+          class="inline-flex items-center py-2 px-4 bg-red-500 hover:bg-red-600 focus:ring-2 focus:ring-red-500 focus:ring-offset-2 text-white rounded-md transition duration-300 mt-5 shadow-red-500/50"
+        >
+          <svg class="w-8 h-8 fill-current mr-2" viewBox="0 0 24 24">
+            <path
+              d="M21.9 5.9c-.2-.7-.7-1.2-1.4-1.4C18.3 4 12 4 12 4s-6.3 0-8.5.5c-.7.2-1.2.7-1.4 1.4C2 8.1 2 12 2 12s0 3.9.5 5.1c.2.7.7 1.2 1.4 1.4 2.2.5 8.5.5 8.5.5s6.3 0 8.5-.5c.7-.2 1.2-.7 1.4-1.4.5-1.2.5-5.1.5-5.1s0-3.9-.5-5.1zM9.5 15.5V8.5l6.5 3z"
+            ></path>
+          </svg>
+          <span>Ver canal</span>
+        </a>
       </div>
     </div>
   </Container>
